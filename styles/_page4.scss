@@ -1,0 +1,149 @@
+.page4 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .container {
+        .about {
+            &__content {
+                margin-bottom: 115px;
+                h6 {
+                    color: $primary-Color;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $txt-Color;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: $second-Color;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+
+            &__menu {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                margin-bottom: 100px;
+            }
+
+            &__container {
+                box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+                border-radius: 20px;
+                text-align: center;
+
+                img {
+                    margin-bottom: 30px;
+                    border-radius: 20px 20px 0 0;
+                }
+
+                h5 {
+                    color: $txt-Color;
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: $second-Color;
+                    font-size: small;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    font-size: 24px;
+                    margin-bottom: 30px;
+
+                    i {
+                        color: $primary-Color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 300px) 
+{
+    .page4 {
+        .container {
+            .about {
+                &__content {
+                    h2 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+
+
+                &__menu {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &__container {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+@media screen and (max-width: 200px) {
+    .page4 {
+        .container {
+            .about {
+                &__container {
+                    h5 {
+                        font-size: 14px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

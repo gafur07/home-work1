@@ -1,0 +1,287 @@
+.home {
+    min-height: 100vh;
+    background: #FFF2F3;
+
+    .container {
+        .header {
+            height: 100px;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__left {
+                display: flex;
+                align-items: center;
+                gap: 80px;
+            }
+
+            &__logo {
+                h2 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: $txt-Color;
+                }
+            }
+
+            &__menu {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-size: 14px;
+                font-weight: 700;
+
+                li {
+                    a {
+                        color: $txt-Color;
+                        transition: 0.3s ease;
+                    }
+
+                    a:hover {
+                        color: $primary-Color;
+                    }
+                }
+            }
+
+            &__right {
+                display: flex;
+                align-items: center;
+                gap: 45px;
+
+                a {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $primary-Color;
+                    transition: 0.3s ease;
+                }
+                a:hover {
+                    color: $txt-Color;
+                }
+            }
+
+            &__togler {
+                font-size: 40px;
+                color: $primary-Color;
+                display: none;
+            }
+        }
+
+        .page1 {
+            padding: 50px 0;
+
+            .row {
+                display: flex;
+                align-items: center;
+                gap: 100px;
+                flex-wrap: wrap-reverse;
+
+                &__content {
+                    h5 {
+                        color: $primary-Color;
+                        font-size: 16px;
+                        font-weight: 700;
+                        margin-bottom: 30px;
+                    }
+
+                    h1 {
+                        color: $txt-Color;
+                        font-weight: 700;
+                        font-size: 58px;
+                        margin-bottom: 30px;
+                    }
+
+                    h4 {
+                        color: $second-Color;
+                        font-size: 20px;
+                        font-weight: 400;
+                        margin-bottom: 30px;
+                    }
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                    }
+                }
+
+                &__img {
+                    img {
+                        width: 600px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) { 
+    .home {
+        .container {
+            .header {
+                &__menu {
+                    display: none;
+                }
+            }
+
+            .page1 {
+                .row {
+                    &__img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 80px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .home {
+        .container {
+            .page1 {
+                .row {
+                    &__content {
+                        h1 {
+                            font-size: 40px;
+                        }
+                        h4 {
+                            font-size: 16px;
+                        }
+                    }
+
+                    &__img {
+                        text-align: center;
+                        img {
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 650px) {
+    .home {
+        .container {
+            .header {
+                &__right {
+                    display: none;
+                }
+                &__togler {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        .container {
+            .page1 {
+                .row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .home {
+        .container {
+            .page1 {
+                .row {
+                    &__content {
+                        h5 {
+                            font-size: 14px;
+                        }
+
+                        h4 {
+                            font-size: 14px;
+                        }
+
+                        h1 {
+                            font-size: 35px;
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+
+
+
+
+
+@media screen and (max-width: 350px) {
+    .home {
+        .container {
+            .page1 {
+                .row {
+                    
+
+                    &__content {
+                        h5 {
+                            font-size: 12px;
+                        }
+
+                        h4 {
+                            font-size: 12px;
+                        }
+
+                        h1 {
+                            font-size: 30px;
+                        }
+
+                        span {
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 250px) { 
+    .home {
+        .container {
+    .page1 {
+            .row {
+                &__content {
+                    h1 {
+                        font-size: 28px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+}
